@@ -28,6 +28,7 @@ const UserSchema = new mongoose.Schema<IUser>({
       message:
         "Password must be at least 8 characters long and include an uppercase letter, lowercase letter, number, and special character.",
     },
+    select: false,
   },
   createdAt: {
     type: Date,
