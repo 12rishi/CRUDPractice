@@ -1,4 +1,5 @@
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from "express";
+import { AuthRequest } from "../types/type";
 const handleError = (fn: Function) => {
   return (req: Request, res: Response) => {
     fn(req, res).catch((err: Error) => {
